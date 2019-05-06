@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles/custom.css">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/skeleton.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,Cyrillic" rel="stylesheet" type="text/css">
+<script src="jquery-3.3.1.js"></script>
+<script>
+$(document).ready(function() {
+    $('.head').css('opacity','0');
+    $('.main .container').css('opacity','0');
+    $('.nav').css('opacity','0');
+
+    $('.head, .nav').animate(
+    {
+        'opacity': '1'
+    },
+    500,'swing', function() {
+        $('.main .container').animate(
+        {
+        'opacity': '1'
+    },
+    500,'swing'
+        
+        
+        )
+    }
+    
+    );
+    
+    
+    
+});
+    
+</script>
+<title>499c.ru</title>
+</head>
+<body>
+<!-- Шапка -->
+<div class="top">
+<div class="head container">
+<div class="logo row">
+ <img class="mta_logo" src="cropped-logo-mostransavto.png">
+    </div>
+<div class="row route">
+    <h1 class="name">Пригородный маршрут №499</h1> <h2 class="surname">(ст. Болшево - Юбилейный - м. ВДНХ)</h2>
+    </div>
+</div>    
+</div>    
+<!-- Навгационная панель -->
+    <div class="line">
+<div class="container">
+    <div class="nav row">
+      <a class="button button-primary" href="#">Главная</a>
+      <a class="button" href="#">Расписание</a>
+      <a class="button" href="#">Новости</a>
+      <a class="button" href="#">автобусы</a>   
+      <a class="button" href="#">Контакты</a>    
+        </div>
+    </div>
+    </div>
+<!-- Контент -->
+<div class="main">
+<div class="container">
+<div class="article row">
+<h1>Главная</h1>
+<p>Добро пожаловать на официальный сайт социального пригородного маршрута Московской области - №499!</p>
+    
+<img src="2025571.jpg" width="40%"><p>Социальный маршрут, связывающий микрорайон "Юбилейный" города Королев, был запущен 01.01.2016 года по решению администрации города, а так же по обоюдному соглашению с ГУП МО "Мострансавто", всвязи с многочисленными просьбами жителей микрорайона Юбилейный и п.Первомайский (Болшево). Теперь местные жители, без труда могут добраться до Москвы без пересадок. Конечная остановка -станция метро ВДНХ.
+    </p><p>
+Обслуживает данный маршрут Королёвское ПАТП.</p>
+</div>    
+</div>  
+    </div>
+
+<!-- Копирайт -->
+<div class="bottom">
+<div class="copyright container">
+<div class="row">
+<div class="eight columns">9</div>
+<div class="four columns">9</div>
+
+</div>    
+</div>
+    </div>
+
+</body>
+</html>
